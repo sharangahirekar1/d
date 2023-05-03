@@ -21,17 +21,20 @@ let elements = d.el.tgA('li');
 
 
 ## For adding Styles
+# styling single element
 d.el.s(element,{
   cursor:'pointer',
   color:'grey',
   backgroundColor:'white'
 })
 
-for styling multiple elements
-d.el.sM([element1,element2,element3],{
+# for styling multiple elements
+let elements = [element1,element2,element3]
+let styles = {
   paddingLeft:'10px',
   border:'1px solid grey'
- })
+ }
+d.el.sM(elements,styles)
  
  
  ## local storage 
